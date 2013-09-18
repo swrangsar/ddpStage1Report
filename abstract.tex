@@ -1,9 +1,7 @@
 \begin{abstract}
 
-The concept of interference temperature was introduced by the FCC as a new metric for quantifying and managing interference. Using this model, cognitive radios (CRs) operating in licensed frequency bands would be able to measure their current interference environment and adjust their transmission characteristics so as not to raise the interference temperature over a regulatory limit.
+Target: Sense the presence of calls going on in the primary OpenBTS and as soon as the call drops/ends start the secondary OpenBTS to enable communication among secondary users
 
-As of now it is hard to predict whether interference temperature is going to be practical because no one has been able to come up with a solution that is agreed upon by everyone. The research on interference temperature was abandoned by the Federal Communications Commission (FCC) in 2007 but there is some hope of a comeback.
+Details:
 
-This document highlights what I have learned about interference temperature as part of my supervised research exposition.
-
-\end{abstract}
+We sensed the energy of the uplink frequency (usually --- uplink freq = downlink freq - 45MHz --- in the GSM900 band) using GnuRadio. We observed the energy of the uplink frequency is lower when there are no calls. We selected a threshold energy level and let the secondary OpenBTS start as soon as the primary OpenBTS's energy level went below threshold.\end{abstract}
