@@ -2,10 +2,8 @@
 *.log
 *.toc
 *.out
-*.bbl
 *.lof
 *.lot
-*.blg
 .DS_Store
 .DS_Store?
 *.gz
