@@ -1,3 +1,11 @@
-\begin{thebibliography}{}
+\begin{thebibliography}{1}
+
+\bibitem{wikiCR}
+\url{http://en.wikipedia.org/wiki/Cognitive_radio}.
+
+\bibitem{repFCC}
+Federal~Communications Commission.
+\newblock Spectrum policy task force.
+\newblock {\em ET Docket No. 02-135}, November 2002.
 
 \end{thebibliography}

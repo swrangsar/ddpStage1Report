@@ -1,56 +1,55 @@
-This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2012)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ddpStage1.aux
 A level-1 auxiliary file: title.aux
 A level-1 auxiliary file: abstract.aux
 A level-1 auxiliary file: chapter1.aux
 A level-1 auxiliary file: chapter2.aux
+A level-1 auxiliary file: chapter3.aux
+A level-1 auxiliary file: chapter4.aux
+A level-1 auxiliary file: appendix1.aux
 The style file: plain.bst
-I couldn't open database file refs.bib
----line 7 of file ddpStage1.aux
- : \bibdata{refs
- :              }
-I'm skipping whatever remains of this command
-I found no \citation commands---while reading file ddpStage1.aux
-I found no database files---while reading file ddpStage1.aux
-You've used 0 entries,
+Database file #1: ddpStage1.bib
+Warning--to sort, need author or key in wikiCR
+You've used 2 entries,
             2118 wiz_defined-function locations,
-            501 strings with 4040 characters,
-and the built_in function-call counts, 18 in all, are:
-= -- 0
-> -- 0
+            512 strings with 4230 characters,
+and the built_in function-call counts, 375 in all, are:
+= -- 33
+> -- 8
 < -- 0
-+ -- 0
-- -- 0
-* -- 2
-:= -- 7
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
++ -- 4
+- -- 2
+* -- 17
+:= -- 62
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 6
 chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 1
-format.name$ -- 0
-if$ -- 1
+cite$ -- 3
+duplicate$ -- 17
+empty$ -- 41
+format.name$ -- 2
+if$ -- 80
 int.to.chr$ -- 0
-int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 3
-num.names$ -- 0
-pop$ -- 0
+int.to.str$ -- 2
+missing$ -- 1
+newline$ -- 11
+num.names$ -- 2
+pop$ -- 13
 preamble$ -- 1
-purify$ -- 0
+purify$ -- 5
 quote$ -- 0
-skip$ -- 1
+skip$ -- 16
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
+substring$ -- 10
+swap$ -- 2
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
-width$ -- 0
-write$ -- 2
-(There were 3 error messages)
+type$ -- 8
+warning$ -- 1
+while$ -- 2
+width$ -- 3
+write$ -- 17
+(There was 1 warning)
