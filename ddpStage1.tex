@@ -1,8 +1,11 @@
-\documentclass[12pt, a4paper, openright]{report}
+\documentclass[12pt, a4paper, openright]{book}
 
 
 \usepackage{amsmath}
 \usepackage{graphicx}
+\usepackage{hyperref}  % for citing URLs
+\usepackage{listings}
+\lstset{breaklines=true}
 \pagestyle{plain}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
@@ -15,14 +18,21 @@
 \include{title}
 
 \include{abstract}
+
+\frontmatter
 \tableofcontents
 
+\mainmatter
 \include{chapter1}
 \include{chapter2}
+\include{chapter3}
 
 
+\appendix
+\include{appendix1}
 
+\backmatter
 \bibliographystyle{plain}
-\bibliography{refs}
+\bibliography{ddpStage1}
 
 \end{document}
