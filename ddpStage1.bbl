@@ -6,19 +6,26 @@ Federal~Communications Commission.
 \newblock {\em ET Docket No. 02-135}, November 2002.
 
 \bibitem{mitola99}
-J.~Mitola et~al.
+Joseph~Mitola et~al.
 \newblock Cognitive radio: Making software radios more personal.
 \newblock {\em IEEE Personal Communications}, 6(4):13--18, August 1999.
 
 \bibitem{kolodzy01}
 P.~Kolodzy et~al.
 \newblock Next generation communications: Kickoff meeting.
-\newblock {\em Proc. DARPA}, October 2001.
+\newblock In {\em Proc. DARPA}, October 2001.
 
 \bibitem{haykin05}
 Simon Haykin.
 \newblock Cognitive radio: Brain-empowered wireless communications.
 \newblock {\em IEEE Journal on selected areas in communications}, 23(2), 2005.
+
+\bibitem{mitola00}
+Joseph Mitola.
+\newblock {\em Cognitive Radio: An Integrated Agent Architecture for Software
+  Defined Radio}.
+\newblock PhD thesis, Royal Institute of Technology (KTH), Stockholm, Sweden,
+  May 2000.
 
 \bibitem{staple04}
 Gregory Staple and Kevin Werbach.
