@@ -1,7 +1,20 @@
 \chapter{Software Defined Radio}
+
+
 \section{Introduction}
+A software radio is a radio system which performs the required signal processing in software instead of using dedicated integrated circuits in hardware. The benefit is that since software can be easily replaced in the radio system, the same hardware can be used to create many kinds of radios for many different transmission standards; thus, one software radio can used for a variety of applications!
+
+
 \section{USRP}
-USRP (Universal Software Radio Peripheral) is a hardware kit developed by Ettus, Inc. to run software defined radio applications.
+The Universal Software Radio Peripheral (USRP) products are computer-hosted software radios. They are designed and sold by Ettus Research, LLC and its parent company, National Instruments. The USRP product family is intended to be a comparatively inexpensive hardware platform for software radio, and is commonly used by research labs, universities, and hobbyists. USRPs connect to a host computer through a high-speed USB or Gigabit Ethernet link, which the host-based software uses to control the USRP hardware and transmit/receive data. Some USRP models also integrate the general functionality of a host computer with an embedded processor that allows the USRP Embedded Series to operate in a standalone fashion.
+The USRP family was designed for accessibility, and many of the products are open source. The board schematics for select USRP models are freely available for download; all USRP products are controlled with the open source UHD driver. USRPs are commonly used with the GNU Radio software suite to create complex software-defined radio systems.
+The USRP family was developed by a team led by Matt Ettus.
+\subsection{USRP Hardware Driver}
+The USRP hardware driver (UHD) is the device driver provided by Ettus Research for use with the USRP product family.[15] It supports Linux, MacOS, and Windows platforms. Several frameworks including GNU Radio, LabVIEW, MATLAB and Simulink use UHD. The functionality provided by UHD can also be accessed directly with the UHD API, which provides native support for C++. Any other language that can import C++ functions can also use UHD. This is accomplished in Python through SWIG, for example.
+UHD provides portability across the USRP product family. Applications developed for a specific USRP model will support other USRP models if proper consideration is given to sample rates and other parameters.[16]
 
 \section{GnuRadio}
+GNU Radio is a free & open-source software development toolkit that provides signal processing blocks to implement software radios. It can be used with readily-available low-cost external RF hardware to create software-defined radios, or without hardware in a simulation-like environment. It is widely used in hobbyist, academic and commercial environments to support both wireless communications research and real-world radio systems.
+
 \section{OpenBTS}
+OpenBTS is a Unix application that uses a software radio to present a GSM Um interface to handsets and uses a SIP softswitch or PBX to connect calls.(You might even say that OpenBTS is a simplified form of IMS (IP Multimedia Subsystem) that works with 2G feature-phone handsets). The combination of the global-standard GSM air interface with low-cost VoIP backhaul forms the basis of a new type of cellular network that can be deployed and operated at substantially lower cost than existing technologies in many applications, especially rural cellular deployments and private cellular networks in remote areas. 
