@@ -38,14 +38,3 @@
     year = 2001,
     month = "October",
 }
-
-@Article{mitola99,
-    author = "J. Mitola et al",
-    title = "Cognitive radio: Making software radios more personal",
-    journal = "IEEE Personal Communications",
-    year = 1999,
-    month = "August",
-    volume = 6,
-    number = 4,
-    pages = "13--18",
-}
