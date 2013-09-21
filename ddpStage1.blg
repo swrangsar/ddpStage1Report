@@ -10,44 +10,44 @@ A level-1 auxiliary file: chapter4.aux
 A level-1 auxiliary file: appendix1.aux
 The style file: plain.bst
 Database file #1: ddpStage1.bib
-You've used 4 entries,
+You've used 5 entries,
             2118 wiz_defined-function locations,
-            526 strings with 4478 characters,
-and the built_in function-call counts, 906 in all, are:
-= -- 87
-> -- 28
+            534 strings with 4593 characters,
+and the built_in function-call counts, 1245 in all, are:
+= -- 124
+> -- 41
 < -- 0
-+ -- 13
-- -- 8
-* -- 54
-:= -- 155
-add.period$ -- 10
-call.type$ -- 4
-change.case$ -- 16
++ -- 18
+- -- 12
+* -- 82
+:= -- 227
+add.period$ -- 15
+call.type$ -- 5
+change.case$ -- 21
 chr.to.int$ -- 0
-cite$ -- 4
-duplicate$ -- 38
-empty$ -- 84
-format.name$ -- 8
-if$ -- 187
+cite$ -- 5
+duplicate$ -- 52
+empty$ -- 103
+format.name$ -- 12
+if$ -- 247
 int.to.chr$ -- 0
-int.to.str$ -- 4
-missing$ -- 3
-newline$ -- 21
-num.names$ -- 6
-pop$ -- 17
+int.to.str$ -- 5
+missing$ -- 5
+newline$ -- 28
+num.names$ -- 10
+pop$ -- 15
 preamble$ -- 1
-purify$ -- 13
+purify$ -- 16
 quote$ -- 0
-skip$ -- 33
+skip$ -- 37
 stack$ -- 0
-substring$ -- 40
-swap$ -- 4
+substring$ -- 64
+swap$ -- 5
 text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 16
+type$ -- 20
 warning$ -- 0
-while$ -- 8
-width$ -- 5
-write$ -- 39
+while$ -- 14
+width$ -- 6
+write$ -- 55
