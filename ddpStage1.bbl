@@ -8,4 +8,14 @@ Federal~Communications Commission.
 \newblock Spectrum policy task force.
 \newblock {\em ET Docket No. 02-135}, November 2002.
 
+\bibitem{haykin05}
+Simon Haykin.
+\newblock Cognitive radio: Brain-empowered wireless communications.
+\newblock {\em IEEE Journal on selected areas in communications}, 23(2), 2005.
+
+\bibitem{staple04}
+Gregory Staple and Kevin Werbach.
+\newblock The end of spectrum scarcity.
+\newblock {\em IEEE Spectrum}, 41(3):48--52, March 2004.
+
 \end{thebibliography}
