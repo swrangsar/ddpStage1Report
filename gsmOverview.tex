@@ -1,20 +1,23 @@
 \chapter{Overview of traditional GSM networks}
 
 \section{What is GSM?}
-GSM, or Global System for Mobile Communications,  is a European standard for the Mobile telecommunications and it is considered as one of the most popular standard worldwide.There are thirteen different frequency bands deﬁned in GSM. However, the 850 MHz, 900 MHz, 1800 MHz, and 1900 MHz bands are the most commonly used. The frequency bands employed within each of the four ranges are similarly organized. They di?er essentially only in the frequencies, such that various synergy effects can be taken advantage of; hence we only give
-some details for the usage in the 900 MHz band.
+GSM, or Global System for Mobile Communications,  is a European standard for the Mobile telecommunications and it is considered as one of the most popular standard worldwide.There are thirteen different frequency bands deﬁned in GSM. However, the 850 MHz, 900 MHz, 1800 MHz, and 1900 MHz bands are the most commonly used. The frequency bands employed within each of the four ranges are similarly organized. They differ essentially only in the frequencies, such that various synergy effects can be taken advantage of; hence we only give some details for the usage in the 900 MHz band.
+
+
 In the 900 MHz band, a total of 70 MHz bandwidth is allocated, two 25-MHz frequency
 bands for uplink and downlink and a 20 MHz unused guard band between them. The MS transmits
 in the 890- to 915-MHz range (uplink) and the BTS transmits in the 935- to 960-MHz
 (downlink) band. This corresponds to 124 duplex channels, where each channel within a BTS is
 referred to as an Absolute Radio Frequency Channel Number (ARFCN). This number describes a pair of frequencies, one uplink and one downlink, and is given a channel index between C0 and C123, with C0 designated as the beacon channel. An ARFCN could be used to calculate the exact frequency (in MHz) of the radio channel. In the GSM 900 band, this is computed by the following equations:
 
-
-Fuplink(n) = 890+0.2*n,                       1<=n<=124
-Fdownlink(n)=Fuplink(n)+45,                  1<=n<=124
-
+\begin{align}
+F_{uplink}(n) &= 890 + 0.2*n \qquad & 1\leq{}n\leq{}124 \nonumber\\
+F_{downlink}(n) &=F_{uplink}(n) + 45  \qquad & 1\leq{}n\leq{}124 \nonumber
+\end{align}
 
 Similar formulas are also deﬁned for the other GSM frequency bands.
+
+
 The principle component groups of a GSM network are as follows:
 \begin{itemize}
 	\item The Mobile Station (MS)
@@ -26,10 +29,10 @@ Diagram of GSM architecture
 fig
 
 
-\section{Mobile Station}
+\subsection{Mobile Station}
 The MS consists of two parts, the Mobile Equipment (ME) and  Subscriber Identity module (SIM). The ME has an identity number called the International Mobile Equipment Identity (IMEI) associated with it, which is unique for that particular device and permanently stored in it.The SIM card consists the International Mobile Subscriber Identity(IMSI) number which is used to identify the subscriber to the system. The IMEI and IMSI are independent of each other and hence, allowing personal mobility.
 
-\section{Base Station System}
+\subsection{Base Station System}
 The GSM Base Station System is the equipment located at a cell site. It comprises a combination of digital and RF equipment. The BSS provides the link between the MS and the Mobile Services Switching Centre (MSC).
 The BSS consists mainly of:
 \begin{description}
@@ -37,7 +40,7 @@ The BSS consists mainly of:
 	\item[The Base Station Controller(BSC)]  The BSC  provides the control for the BSS. The BSC communicates directly with the MSC. The BSC may control single or multiple BTSs. Crucial functions like radio channel link establishment, frequency hopping, and handovers from one cell to another.
 \end{description}
 
-\section{Network Switching Subsystem} The Network Switching System includes the main switching functions of the GSM network. It also contains the databases required for subscriber data and mobility management. Its main function is to manage communications between the GSM network and other telecommunications networks. The main components of the Network Switching System are: 
+\subsection{Network Switching Subsystem} The Network Switching System includes the main switching functions of the GSM network. It also contains the databases required for subscriber data and mobility management. Its main function is to manage communications between the GSM network and other telecommunications networks. The main components of the Network Switching System are: 
 \begin{description}
 	\item[Mobile Services Switching Centre(MSC)] The MSC does call-switching and its overall purpose is the same as that of any telephone exchange. When the MSC provides the interface between the PSTN and the BSSs in the GSM network it will be known as a Gateway MSC. In this position it will provide the switching required for all MS originated or terminated traffic. Each MSC provides service to MSs located within a defined geographic coverage area. One MSC is capable of supporting a regional capital with approximately one million inhabitants. 
 The functions carried out by the MSC are: Call Processing, Operations and Maintenance Support, Internetwork Interworking and Billing
