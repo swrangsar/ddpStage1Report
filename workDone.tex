@@ -1,0 +1,65 @@
+\chapter{OpenBTS with a cognitive approach}
+
+
+\section{Target}
+
+Our goal is to set up an OpenBTS system with cognitive capabilities. We decide on a frequency channel, to run our cognitive OpenBTS system in, beforehand. First we sense the presence of ongoing calls made by primary users in the predefined frequency channel. If there are ongoing calls in that channel then we wait for the calls to end. As soon as the calls made by primary users end, we start our secondary OpenBTS system to allow secondary users to make calls.
+
+\section{Spectrum Sensing}
+
+Spectrum sensing is the task of finding spectrum holes (or empty spectrum) in the local neighborhood of the cognitive radio receiver. Spectrum holes are the empty or unused portions of the spectrum at a particular space and time. Spectrum sensing lies at the very heart of cognitive radio technology. Cognitive radio works by utilizing the unused portions of the spectrum and for this to be possible, we need to find those empty portions of the spectrum at the very first. 
+
+Detecting the presence of primary users is considered the most efficient way of spectrum sensing. Some of the ways to detect primary users are:
+
+\begin{itemize}
+	\item Energy detection
+	\item Matched filter detection
+	\item Cyclostationary detection
+\end{itemize}
+
+\subsection{Energy Detection}
+
+This method of detecting primary users is the simplest one. It requires no a-priori knowledge about the signal to be detected. Basically the energy of the frequency band in question is calculated and compared to a predefined threshold to determine whether a primary user is present in that frequency band or not. Energy detection is simple to implement and relatively not so expensive in terms of required computing resources.
+This method is not without disadvantages. Firstly deciding on a good threshold energy level is difficult. It cannot differentiate between primary users and secondary users. At low SNR, distinguishing a signal from noise is difficult. Averaging out the noise by using longer observation period can also lead to inefficient use of time. 
+
+figure page 17
+
+
+
+
+figure gives block diagram to implement the energy detection using the periodogram method. Spectrum sensing is a binary hypothesis testing problem with tow possible hypothesis H0 and H1. The hypothesis H0 defines that there is no PU present and hypothesis H1 defines that there is a PU present. The goal of energy detection is to distinguish between these two hypothesis[6]:
+
+
+%x(t)= n(t) ,             H0
+%     = h s(t)+n(t) ,   H1
+where x(t) is signal received by secondary user and s(t) is signal transmitted by primary user., n(t)   is additive white Gaussian noise (AWGN) and h is the amplitude gain of the channel. It is assumed that s(t)  and n(t) are independent of each other. Signal detection is performed using an energy detector and compute decision statistics Y which corresponds to energy collected in observation time Y and bandwidth W and comparing this statistics to a predetermined threshold. 
+
+.
+\subsubsection{Average Periodogram Analysis}
+ It is technique used as an energy detection method for determining the presence or absence of primary traffic. 
+Power spectrum is estimated using periodogram analysis, which is based on discrete fourier transform (DFT) of finite length segments of signal. It involves sectioning the data into finite segments to compute individual periodogram or modified periodogram and averaging the modified periodogram segments.
+Let X[n], n=0,1,... L-1 be the discrete time signal that are divided into K finite length equal segments, where length of each segment is N i.e. KN = L; Xr[n], n= 0,1,..., N-1 is the rth segment and W[n], n=0,1,...,N-1 be the window applied to each segment. The modified periodogram for the rth segment is ,
+
+%Ir[k]= (1/NU)|Vr[k]|^2     for k=0,1,...,N-1
+where vr[k] is a N point DFT and U is normalization factor i.e. ,
+
+%Vr[k]=DFT{W[n]*X[n]}  and 
+%U= 1/N(n=0N-1(W[n])^2)
+The PSD of X[n] sequence or the time averaged periodogram estimate ,
+%  I[k]=1/Kr=0K-1Ir[k]
+
+One of the mose relevant tools for wide band spectrum sensing is GNU radio spectrum sensor %“usrp_spectrum_sense.py”. 
+This program can be used as a basic code for implementing wideband spectrum analyzer. The output is % Y[i]=re[X[i]]*re[X[i]]+im[X[i]]*im[X[i]].
+To use N point complex FFT X(W) analysis, we have to get N time samples of x(t)  which are sampled at Fs. These time samples must be time windowed using a known window function to reduce spectral leakage. The output of the complex FFT will represent the frequency spectrum content as follows:
+The first value of the FFT output (bin 0 == X[0]) is the passband centre frequency
+The first half of FFT spectrum (X[1] to X[N/2-1]) contains the positive baseband frequencies, which corresponds to the passband spectrum from centre frequency to +Fs/2.
+The second half of the FFT (X[N/2] to X[N-1]) contains the negative baseband frequencies, ie from -Fs/2 to centre frequency.
+
+
+In our case bla bla aur scenario…………………………………………
+
+
+ 
+
+ 
+

@@ -9,22 +9,28 @@
 \pagestyle{plain}
 \newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
 
+\topmargin       0in\oddsidemargin   0in\evensidemargin  0in\headheight      0in\headsep         0in\topskip         0in\textheight      9in\textwidth       6.5in
+
 \begin{document}
 
 \frontmatter
 \include{title}
 \include{abstract}
 
+\setcounter{tocdepth}{1}
 \tableofcontents
 
-
+\setlength{\parindent}{0em}\setlength{\parskip}{1em}\setlength\arraycolsep{2pt}
 
 \mainmatter
 \include{chapter1}
+\include{gsmOverview}
 \include{usrp}
 \include{gnuradio}
-\include{chapter3}
-\include{chapter4}
+\include{openbts}
+\include{workDone}
+%\include{chapter3}
+%\include{chapter4}
 
 
 
