@@ -68,8 +68,33 @@ The second half of the FFT ($X[N/2]$ to $X[N-1$]) contains the negative baseband
 
 In our case bla bla aur scenario…………………………………………
 
+SETUP 
+
+fig 
+
+
+
+
+
+
+
+
+
+ The above figure describes the whole setup that we have used for our project 
+
+ ...description of the set up……………..
+ 
+We have been able to successfully sense the presence of primary user in the predefined frequency band and as soon as the primary user leaves the energy in that band goes low and we are able to switch on the secondary BTS and secondary users are able to make calls and transmit SMS’s using secondary BTS. 
+
+We have also been able write python script to kill all the four processes of openBTS. Also we are able to connect two USRP kits on the same computer and run GNURadio and OpenBTS parallelly which we were not able to initially. GNU Radio will be used to continuously sense the spectrum to identify the presence of primary user and provide the optimum ARFCN for OpenBTS to start. 
+
+What we aim to achieve is after GNUradio has provided particular ARFCN corresponding to certain frequency (say F1) to OpenBTS, it will continue sensing for primary users in this frequency on which OpenBTS is currently operating and if it finds that the energy in that frequency goes above some predefined threshold then secondary OpenBTS will close thus avoiding interference to primary users and it restart on another frequency(say F2). Now GNURadio will look for primary users in this frequency F2 by checking if the energy in this frequency is going beyond some predefined threshold.
 
  
+The following flow graph summerizes what we aim to achieve.
+
+
+
 
  
 
