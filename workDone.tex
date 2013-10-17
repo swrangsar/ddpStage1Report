@@ -65,8 +65,13 @@ The first value of the FFT output ($bin 0 == X[0]$) is the passband centre frequ
 The first half of FFT spectrum ($X[1]$ to $X[N/2-1]$) contains the positive baseband frequencies, which corresponds to the passband spectrum from centre frequency to $+Fs/2$.
 The second half of the FFT ($X[N/2]$ to $X[N-1$]) contains the negative baseband frequencies, i.e. from $-Fs/2$ to centre frequency.
 
+In our case, we  gather 1024 samples using a tuner centered at uplink frequency of 900MHz. We chose 1024 as the number of FFT points because the number of FFT points has to be a power of 2 for the fast execution of the FFT algorithm. Sampling frequency is set as 10 MHz by default. The frequency resolution is therefore: 10 MHz / 1024 = 9.7656 MHz.
 
-In our case bla bla aur scenario…………………………………………
+The `decimation' is defined as `dsp rate' divided by `sample rate'. The UHD driver requires the decimation value to be an even number. The dsp rate of the USRP is 100MHz. Hence we chose sampling frequency to be 10 MHz which gives a decimation value of: 100 MHz / 10 MHz = 10.
+
+
+
+In our case bla bla aur scenario
 
 SETUP 
 
@@ -82,7 +87,7 @@ fig
 
  The above figure describes the whole setup that we have used for our project 
 
- ...description of the set up……………..
+ ...description of the set up..
  
 We have been able to successfully sense the presence of primary user in the predefined frequency band and as soon as the primary user leaves the energy in that band goes low and we are able to switch on the secondary BTS and secondary users are able to make calls and transmit SMS’s using secondary BTS. 
 

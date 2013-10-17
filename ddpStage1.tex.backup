@@ -32,7 +32,7 @@
 \setlength\arraycolsep{2pt}
 
 \mainmatter
-\include{intro}
+\include{chapter1}
 \include{gsmOverview}
 \include{usrp}
 \include{gnuradio}

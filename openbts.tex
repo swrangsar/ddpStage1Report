@@ -33,7 +33,9 @@ The OpenBTS application contains:
 The general design approach of OpenBTS is avoid implementing any function above L3, so at L3 or L4 every subprotocol of GSM is either terminated locally or translated through a gateway to some other protocol for handling by an external application. Similarly, OpenBTS itself does not contain any speech transcoding functions above the L1 FEC parts.
 
 \subsection{Transceiver}
-The transceiver application performs the radio modem functions of GSM 05.05 and manages the USB interface to the radio hardware.
+The transceiver application performs the radio modem functions of GSM 05.05 and manages the Gigabit Ethernet interface
+(USB2 interface, in case
+of USRP1 or older models) to the radio hardware.
 
 \subsection{Asterisk}
 OpenBTS uses a SIP switch or PBX to perform the call control functions that would normally be performed by the mobile switching center in a conventional GSM network, although in most network configurations this switching function is distributed over multiple switches. These switches also provide transcoding services. In OpenBTS P2.8 the standard SIP switch is Asterisk 1.8.
@@ -45,11 +47,25 @@ OpenBTS uses a modified SIP registry as a substitute for the home location regis
 Smqueue is a store-and-forward server that is used for text messaging in the OpenBTS system. Smqueue is required to send a text message from one MS to another, or to provide reliable delivery of text messages to an MS from any source.
 
 \subsection{Network Organization}
-In the simplest network, with a single access point, all of the applications in the suite run inside the access point on the same embedded computer. This is shown in Figure 2.1.
+In the simplest network, with a single access point, all of the applications in the suite run inside the access point on the same embedded computer.
 
 
-Fig 2.1
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{networkOrg}
+\caption{\textbf{Network Organization of OpenBTS}: The smqueue block handles SMSs. 
+The subscriber registry database contains the details of all registered users and it
+maps the registered IMSIs to corresponding dialling numbers. The softswitch connects 
+speech calls (e.g. Asterisk, FreeSwitch). The transceiver performs radio modem
+functions and manages the Gigabit Ethernet interface (USB2 interface, in case
+of USRP1 or older models) to the USRP device. The OpenBTS itself is the GSM 
+implementation from the TDMA part of L1 up through L3 and the L3/L4 boundary. 
+It has a SIP interface to communicate with the other blocks like smqueue, subscriber 
+registry, etc.
+}
+\label{networkOrg}
+\end{figure}
 
 
 
