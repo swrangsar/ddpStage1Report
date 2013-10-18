@@ -1,5 +1,5 @@
 \chapter*{\centering{Abstract}}
-Our goal is to set up a software defined cognitive radio using OpenBTS, GNU Radio and USRP kits. 
+Our goal is to set up an OpenBTS system with cognitive capabilities. 
 We decide on a frequency channel, to run our cognitive OpenBTS system in, beforehand. 
 First we sense the presence of ongoing calls made by primary users in the predefined frequency channel. 
 The sensing is done by finding out the energy in that channel using a technique of energy detection called peroidogram analysis.
