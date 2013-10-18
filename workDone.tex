@@ -67,7 +67,7 @@ The second half of the FFT ($X[N/2]$ to $X[N-1$]) contains the negative baseband
 
 In our case, we  gather 1024 samples using a tuner centered at uplink frequency of 900MHz. We chose 1024 as the number of FFT points because the number of FFT points has to be a power of 2 for the fast execution of the FFT algorithm. Sampling frequency is set as 10 MHz by default. The frequency resolution is therefore: 10 MHz / 1024 = 9.7656 MHz.
 
-The `decimation' is defined as `dsp rate' divided by `sample rate'. The UHD driver requires the decimation value to be an even number. The dsp rate of the USRP is 100MHz. Hence we chose sampling frequency to be 10 MHz which gives a decimation value of: 100 MHz / 10 MHz = 10.
+The \emph{decimation} is defined as \emph{dsp rate} divided by \emph{sample rate}. The UHD driver requires the decimation value to be an even number. The \emph{dsp rate} is the actual hardware-level sampling rate of the USRP kit. It is the rate at which the USRP device takes analog samples from the external world and converts them to digital form.  The \emph{dsp rate} of the USRP is 100MHz. Hence we chose sampling frequency to be 10 MHz which gives a decimation value of: 100 MHz / 10 MHz = 10.
 
 
 
