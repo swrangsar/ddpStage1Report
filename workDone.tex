@@ -70,14 +70,12 @@ In our case, we  gather 1024 samples using a tuner centered at uplink frequency 
 The \emph{decimation} is defined as \emph{dsp rate} divided by \emph{sample rate}. The UHD driver requires the decimation value to be an even number. The \emph{dsp rate} is the actual hardware-level sampling rate of the USRP kit. It is the rate at which the USRP device takes analog samples from the external world and converts them to digital form.  The \emph{dsp rate} of the USRP is 100MHz. Hence we chose sampling frequency to be 10 MHz which gives a decimation value of: 100 MHz / 10 MHz = 10.
 
 
-
-In our case bla bla aur scenario
-
-SETUP 
-
-fig 
-
-
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{workSetup}
+\caption{The setup used for the project}
+\label{workSetup}
+\end{figure}
 
 
 
@@ -85,11 +83,12 @@ fig
 
 
 
- The above figure describes the whole setup that we have used for our project 
 
- ...description of the set up..
+
+
  
-We have been able to successfully sense the presence of primary user in the predefined frequency band and as soon as the primary user leaves the energy in that band goes low and we are able to switch on the secondary BTS and secondary users are able to make calls and transmit SMSÕs using secondary BTS. 
+ 
+We have been able to successfully sense the presence of primary user in the predefined frequency band and as soon as the primary user leaves the energy in that band goes low and we are able to switch on the secondary BTS and secondary users are able to make calls and transmit SMS?s using secondary BTS. 
 
 We have also been able write python script to kill all the four processes of openBTS. Also we are able to connect two USRP kits on the same computer and run GNURadio and OpenBTS parallelly which we were not able to initially. GNU Radio will be used to continuously sense the spectrum to identify the presence of primary user and provide the optimum ARFCN for OpenBTS to start. 
 
