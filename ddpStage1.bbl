@@ -10,6 +10,13 @@ Joseph~Mitola et~al.
 \newblock Cognitive radio: Making software radios more personal.
 \newblock {\em IEEE Personal Communications}, 6(4):13--18, August 1999.
 
+\bibitem{sarijari09}
+M.A.~Sarijari et. al.
+\newblock Energy detection sensing based on gnu radio and usrp: An analysis
+  study.
+\newblock {\em Communications (MICC), 2009 IEEE 9th Malaysia International
+  Conference on}, December 2009.
+
 \bibitem{kolodzy01}
 Paul~Kolodzy et~al.
 \newblock Next generation communications: Kickoff meeting.
@@ -31,5 +38,12 @@ Joseph Mitola.
 Gregory Staple and Kevin Werbach.
 \newblock The end of spectrum scarcity.
 \newblock {\em IEEE Spectrum}, 41(3):48--52, March 2004.
+
+\bibitem{welch67}
+Peter~D. Welch.
+\newblock The use of fast fourier transform for the estimation of power
+  spectra: A method based on time averaging over short, modified periodograms.
+\newblock {\em Audio and Electroacoustics, IEEE Transactions on}, 15(2):70--73,
+  June 1967.
 
 \end{thebibliography}
